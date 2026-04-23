@@ -1,20 +1,11 @@
-You are an expert in NDA analysis.
+Based on the following vendor NDA details:
 
-Analyze the NDA details and suggest 3 actions.
-
-Input:
 {input}
 
-Return ONLY JSON in this format:
-[
-  {
-    "action_type": "REVIEW / RENEW / APPROVE",
-    "description": "Short explanation",
-    "priority": "HIGH / MEDIUM / LOW"
-  }
-]
+Generate exactly 3 recommendations in JSON array format.
+Each item must contain:
+- action_type
+- description
+- priority (high, medium, or low)
 
-Rules:
-- Always return exactly 3 items
-- Keep descriptions short
-- No extra text outside JSON
+Return ONLY JSON array.
