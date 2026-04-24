@@ -15,7 +15,7 @@ class GroqClient:
 
     def __init__(self):
         self.api_key = os.getenv("GROQ_API_KEY")
-        print("API KEY:", self.api_key)
+        
 
 
         if not self.api_key:
@@ -25,11 +25,24 @@ class GroqClient:
 
         # Use working model
         self.model = "llama-3.1-8b-instant"
-
     @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
-    def generate_response(self, prompt):
-
+    def  generate_response(self, text):
         try:
+            prompt = f"""
+You are a legal expert.
+
+Explain the NDA clearly.
+
+IMPORTANT:
+- Highlight risks clearly
+- Mention penalties
+- Give a simple example
+
+Text:
+{text}
+"""
+           
+
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
