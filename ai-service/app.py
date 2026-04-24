@@ -4,10 +4,14 @@ from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 import bleach
 import re
+import jwt
 
 app = Flask(__name__)
 
-# Rate limit (30 requests per minute)
+# 🔐 JWT Secret (use env variable in real apps)
+SECRET_KEY = "mysecretkey"
+
+# Rate limit
 limiter = Limiter(
     get_remote_address,
     app=app,
@@ -25,57 +29,94 @@ BLOCK_PATTERNS = [
     r"jailbreak"
 ]
 
-# Input sanitisation middleware
+# 🔐 JWT verification
+def verify_token(token):
+    try:
+        jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        return True
+    except:
+        return False
+
+
+# 🔐 Input sanitisation + validation
 @app.before_request
 def sanitize_input():
 
-    if request.method == "POST" and request.is_json:
+    if request.method == "POST":
+
+        # ✅ Check JSON
+        if not request.is_json:
+            return jsonify({"success": False, "error": "Invalid JSON"}), 400
+
         data = request.get_json()
 
-        # Missing input
+        # ✅ Missing field
         if not data or "text" not in data:
-            return jsonify({
-                "success": False,
-                "error": "Missing 'text' field"
-            }), 400
+            return jsonify({"success": False, "error": "Missing 'text' field"}), 400
 
         text = data["text"]
 
-        # Remove HTML
+        # ✅ Empty input
+        if not text or not text.strip():
+            return jsonify({"success": False, "error": "Empty input"}), 400
+
+        # ❌ Reject HTML
+        if re.search(r"<.*?>", text):
+            return jsonify({"success": False, "error": "HTML not allowed"}), 400
+
+        # 🔐 PII check (email / phone)
+        if re.search(r"\S+@\S+|\b\d{10}\b", text):
+            return jsonify({"success": False, "error": "PII not allowed"}), 400
+
+        # Clean input
         clean_text = bleach.clean(text, tags=[], strip=True)
 
-        # Detect prompt injection
+        # 🔐 Prompt injection detection
         for pattern in BLOCK_PATTERNS:
             if re.search(pattern, clean_text, re.IGNORECASE):
-                return jsonify({
-                    "success": False,
-                    "error": "Unsafe input detected"
-                }), 400
+                return jsonify({"success": False, "error": "Unsafe input detected"}), 400
 
         request.cleaned_text = clean_text
 
 
-# API endpoint
+# 🚀 API endpoint (JWT protected)
 @app.route("/describe", methods=["POST"])
 def describe():
+
+    # 🔐 JWT check
+    token = request.headers.get("Authorization")
+    if not token or not verify_token(token):
+        return jsonify({"success": False, "error": "Unauthorized"}), 401
+
     try:
         user_input = request.cleaned_text
 
-        prompt = f"Explain the following in simple terms:\n{user_input}"
+        prompt = f"""
+You are a legal expert.
 
-        result = client.generate_response(prompt)
+Explain the following clearly in simple terms.
+Include:
+- Key points
+- Risks
+- Penalties
+
+Text:
+{user_input}
+"""
+
+        result = client.generate_response(user_input)
 
         return jsonify({
             "success": True,
             "description": result["response"]
-        })
+        }), 200
 
-    except Exception as e:
+    except Exception:
         return jsonify({
             "success": False,
-            "error": str(e)
+            "error": "AI service failed"
         }), 500
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
