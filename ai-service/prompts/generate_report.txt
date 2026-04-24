@@ -1,0 +1,13 @@
+Based on the following vendor NDA details:
+
+{input}
+
+Generate a structured report in JSON format with:
+
+- title
+- summary
+- overview
+- key_items (array)
+- recommendations (array)
+
+Return ONLY valid JSON. Do not include markdown or backticks.

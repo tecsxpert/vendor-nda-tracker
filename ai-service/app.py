@@ -1,14 +1,17 @@
 from dotenv import load_dotenv
 load_dotenv()
+import routes.generate_report
 
 from flask import Flask
 import routes.describe
 import routes.recommend
+import routes.generate_report
 
 app = Flask(__name__)
 
 app.register_blueprint(routes.describe.describe_bp)
 app.register_blueprint(routes.recommend.recommend_bp)
+app.register_blueprint(routes.generate_report.report_bp)
 
 print(app.url_map)
 
