@@ -190,3 +190,61 @@ All endpoints were tested against common attack vectors. Input validation, sanit
 * No critical vulnerabilities
 * API secured with authentication, validation, and rate limiting
 * System ready for production-level enhancements
+
+
+
+## Executive Summary
+
+A comprehensive security review was conducted across the backend and AI service. Key risks such as unauthorized access, prompt injection, and unsafe inputs were identified and mitigated through validation, sanitization, and controlled API design. The system is secure for development and testing environments.
+
+## Threat Model
+
+- Unauthorized API access  
+- Prompt injection attacks  
+- Exposure of sensitive data (PII)  
+- Malicious input / injection attacks  
+- Weak validation or missing checks  
+- Backend ↔ AI communication risks  
+
+## Security Controls Implemented
+
+- Input validation and sanitization using bleach  
+- Prompt injection detection using pattern matching  
+- PII detection (email, phone)  
+- Rate limiting using Flask-Limiter  
+- Secure headers enabled  
+- JWT authentication implemented (disabled during testing phase)
+
+## Security Testing
+
+- Tested empty and invalid inputs → correctly rejected  
+- Tested HTML injection → blocked  
+- Tested prompt injection → detected and rejected  
+- Verified API responses for unauthorized access  
+- Tested integration via Swagger UI  
+- Restart testing confirmed stability  
+
+## Findings & Fixes
+
+| Issue | Fix |
+|------|-----|
+| Missing Swagger config | Added OpenAPI dependency |
+| Weak validation | Added strict input checks |
+| Prompt injection risk | Added pattern filtering |
+| Generic AI responses | Improved prompt |
+
+## Residual Risks
+
+- JWT authentication disabled during testing  
+- AI responses may vary based on input  
+- External dependency on AI API  
+
+## Team Sign-off
+
+Security review completed.  
+All identified issues have been addressed for the testing phase.
+
+Team:
+- AI Developer  
+- Backend Developer  
+- Security Reviewer  
