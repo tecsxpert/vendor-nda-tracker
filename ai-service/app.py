@@ -84,9 +84,9 @@ def sanitize_input():
 def describe():
 
     # 🔐 JWT check
-    token = request.headers.get("Authorization")
-    if not token or not verify_token(token):
-        return jsonify({"success": False, "error": "Unauthorized"}), 401
+    # token = request.headers.get("Authorization")
+    # if not token or not verify_token(token):
+      #   return jsonify({"success": False, "error": "Unauthorized"}), 401
 
     try:
         user_input = request.cleaned_text
@@ -104,7 +104,7 @@ Text:
 {user_input}
 """
 
-        result = client.generate_response(user_input)
+        result = client.generate_response(prompt)
 
         return jsonify({
             "success": True,
@@ -117,6 +117,51 @@ Text:
             "error": "AI service failed"
         }), 500
 
+@app.route("/generate-report", methods=["POST"])
+def generate_report():
 
+    try:
+        data = request.get_json()
+
+        if not data or "text" not in data:
+            return jsonify({"success": False, "error": "Missing 'text' field"}), 400
+
+        user_input = data["text"]
+
+        prompt = f"""
+You are a legal analyst.
+
+Generate a structured NDA risk report with:
+
+- Title
+- Summary (2-3 lines)
+- Overview
+- Key Issues
+- Recommendations
+
+Details:
+{user_input}
+
+Keep it clear and structured.
+"""
+
+        result = client.generate_response(prompt)
+
+        return jsonify({
+            "success": True,
+            "report": result["response"]
+        }), 200
+
+    except Exception:
+        return jsonify({
+            "success": False,
+            "error": "AI service failed"
+        }), 500
+    
+
+    
 if __name__ == "__main__":
     app.run(debug=False)
+
+
+    
