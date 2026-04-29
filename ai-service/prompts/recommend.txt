@@ -1,0 +1,11 @@
+Based on the following vendor NDA details:
+
+{input}
+
+Generate exactly 3 recommendations in JSON array format.
+Each item must contain:
+- action_type
+- description
+- priority (high, medium, or low)
+
+Return ONLY JSON array.
