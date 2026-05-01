@@ -3,6 +3,7 @@ load_dotenv()
 
 from flask import Flask
 from werkzeug.serving import WSGIRequestHandler
+from sentence_transformers import SentenceTransformer
 
 WSGIRequestHandler.server_version = ""
 WSGIRequestHandler.sys_version = ""
@@ -13,6 +14,11 @@ import routes.generate_report
 import routes.health
 
 app = Flask(__name__)
+
+# Pre-load sentence-transformers at startup
+print("Loading sentence-transformers model...")
+model = SentenceTransformer("all-MiniLM-L6-v2")
+print("Model loaded successfully!")
 
 @app.after_request
 def add_security_headers(response):
