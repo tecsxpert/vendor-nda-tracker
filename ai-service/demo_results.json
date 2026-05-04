@@ -1,0 +1,782 @@
+[
+  {
+    "record": 1,
+    "input": "NDA with 2 year confidentiality period and unlimited liability clause",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:37.548949",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "negotiation",
+          "description": "Request to limit the liability clause to a specific amount or a percentage of the contract value",
+          "priority": "high"
+        },
+        {
+          "action_type": "review",
+          "description": "Carefully review the NDA to understand the scope of the unlimited liability clause and its potential implications",
+          "priority": "medium"
+        },
+        {
+          "action_type": "mitigation",
+          "description": "Develop a plan to mitigate risks associated with the unlimited liability clause, such as purchasing liability insurance",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 2,
+    "input": "Vendor agreement restricting sharing of trade secrets for 3 years",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:37.996160",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Review the vendor agreement to understand the terms and conditions of the NDA",
+          "priority": "high"
+        },
+        {
+          "action_type": "Compliance",
+          "description": "Ensure all employees who have access to the trade secrets are aware of and comply with the 3-year restriction",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Monitoring",
+          "description": "Schedule periodic checks to verify that trade secrets are not being shared inappropriately after the 3-year period",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 3,
+    "input": "Mutual NDA between two tech companies for software development",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:38.619409",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review and Negotiate",
+          "description": "Carefully review the mutual NDA agreement to ensure it protects both companies' intellectual property and negotiate terms if necessary",
+          "priority": "high"
+        },
+        {
+          "action_type": "Establish Communication Channels",
+          "description": "Set up secure communication channels for sharing confidential information and designate a primary point of contact for each company",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Develop an Information Sharing Plan",
+          "description": "Create a plan outlining what information can be shared, with whom, and under what circumstances to prevent unauthorized disclosures",
+          "priority": "high"
+        }
+      ]
+    }
+  },
+  {
+    "record": 4,
+    "input": "One-sided NDA protecting only the client's information",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:39.132275",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Carefully review the NDA to ensure it adequately protects the client's information",
+          "priority": "high"
+        },
+        {
+          "action_type": "Negotiate",
+          "description": "Negotiate with the client to include mutual non-disclosure terms to protect the vendor's information as well",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Seek Legal Counsel",
+          "description": "Consult with a legal expert to verify the NDA's validity and potential implications for the vendor",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 5,
+    "input": "NDA with no exit clause and automatic renewal every year",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:39.781173",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "renegotiation",
+          "description": "Request to add an exit clause to the NDA to allow for termination or cancellation",
+          "priority": "high"
+        },
+        {
+          "action_type": "amendment",
+          "description": "Propose an amendment to include a notice period for non-renewal to avoid automatic renewal",
+          "priority": "medium"
+        },
+        {
+          "action_type": "review",
+          "description": "Regularly review the NDA terms to assess potential risks and liabilities associated with the automatic renewal",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 6,
+    "input": "Vendor NDA with data protection and GDPR compliance requirements",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:40.336617",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Conduct a thorough review of the vendor NDA to ensure compliance with GDPR requirements",
+          "priority": "high"
+        },
+        {
+          "action_type": "Implement",
+          "description": "Implement data protection measures as outlined in the vendor NDA to prevent data breaches",
+          "priority": "high"
+        },
+        {
+          "action_type": "Monitor",
+          "description": "Regularly monitor vendor activity to ensure ongoing compliance with the NDA and GDPR requirements",
+          "priority": "medium"
+        }
+      ]
+    }
+  },
+  {
+    "record": 7,
+    "input": "NDA including non-compete clause for 5 years post termination",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:40.976814",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "review",
+          "description": "Carefully review the non-compete clause to understand its implications and potential restrictions on future business activities",
+          "priority": "high"
+        },
+        {
+          "action_type": "negotiate",
+          "description": "Consider negotiating the duration or scope of the non-compete clause to minimize potential impact on future business opportunities",
+          "priority": "medium"
+        },
+        {
+          "action_type": "consult",
+          "description": "Consult with a legal expert to ensure compliance with the non-compete clause and to discuss potential strategies for mitigating its effects",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 8,
+    "input": "Short term NDA for a 6 month project with a freelancer",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:41.744280",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review and Negotiation",
+          "description": "Carefully review the NDA terms and negotiate any unclear or unfavorable clauses to protect the freelancer's interests",
+          "priority": "high"
+        },
+        {
+          "action_type": "Confidentiality and Security",
+          "description": "Ensure the freelancer understands their obligations to maintain confidentiality and implement necessary security measures to protect the vendor's sensitive information",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Termination and Expiration",
+          "description": "Establish a clear understanding of the NDA's termination and expiration procedures to avoid any potential disputes or liabilities after the 6-month project",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 9,
+    "input": "NDA with broad scope covering all business communications",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:42.267050",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "review",
+          "description": "Carefully review the NDA to understand the scope and any potential limitations or restrictions on business communications",
+          "priority": "high"
+        },
+        {
+          "action_type": "negotiate",
+          "description": "Negotiate the terms of the NDA to ensure they are reasonable and do not overly restrict normal business operations",
+          "priority": "medium"
+        },
+        {
+          "action_type": "implement",
+          "description": "Implement procedures to ensure all employees understand and comply with the terms of the NDA",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 10,
+    "input": "Vendor agreement with penalty clause of $50,000 for breach",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:42.857325",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "review",
+          "description": "Review the vendor agreement to understand the terms and conditions of the penalty clause",
+          "priority": "high"
+        },
+        {
+          "action_type": "negotiate",
+          "description": "Negotiate the penalty clause to reduce the amount or to include a cure period for breaching the agreement",
+          "priority": "medium"
+        },
+        {
+          "action_type": "comply",
+          "description": "Ensure all employees understand and comply with the vendor agreement to avoid the $50,000 penalty for breach",
+          "priority": "high"
+        }
+      ]
+    }
+  },
+  {
+    "record": 11,
+    "input": "NDA governed by UK law with London jurisdiction",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:43.361720",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Carefully review the NDA to understand obligations and restrictions",
+          "priority": "high"
+        },
+        {
+          "action_type": "Consult",
+          "description": "Consult with a UK law expert to ensure compliance with London jurisdiction",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Implement",
+          "description": "Implement procedures to maintain confidentiality as required by the NDA",
+          "priority": "high"
+        }
+      ]
+    }
+  },
+  {
+    "record": 12,
+    "input": "Technology sharing NDA between startup and enterprise company",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:44.228494",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Carefully review the NDA terms to ensure protection of startup's intellectual property",
+          "priority": "high"
+        },
+        {
+          "action_type": "Negotiate",
+          "description": "Negotiate the NDA terms with the enterprise company to include clear guidelines for technology sharing",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Monitor",
+          "description": "Regularly monitor the sharing of technology to prevent unauthorized use or disclosure",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 13,
+    "input": "NDA with unclear termination conditions and vague scope",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:45.270563",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review and Revise",
+          "description": "Clarify the termination conditions and scope of the NDA to ensure mutual understanding and protection of interests",
+          "priority": "high"
+        },
+        {
+          "action_type": "Seek Legal Counsel",
+          "description": "Consult with a legal expert to navigate the unclear terms and negotiate a revised agreement that meets the company's needs",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Establish Communication Channel",
+          "description": "Open a dialogue with the vendor to discuss concerns and potential revisions to the NDA, ensuring a collaborative approach to resolving ambiguities",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 14,
+    "input": "Vendor NDA requiring monthly confidentiality reports",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:45.928959",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Implement Reporting Tool",
+          "description": "Develop a system to track and generate monthly confidentiality reports to comply with the vendor NDA",
+          "priority": "high"
+        },
+        {
+          "action_type": "Review Confidentiality Processes",
+          "description": "Assess current confidentiality procedures to ensure alignment with the vendor NDA requirements",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Provide Training to Employees",
+          "description": "Conduct regular training sessions for employees on confidentiality and the importance of timely reporting",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 15,
+    "input": "NDA protecting customer data and payment information",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:46.390088",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review and Update",
+          "description": "Review the NDA agreement to ensure it adequately protects customer data and payment information",
+          "priority": "high"
+        },
+        {
+          "action_type": "Employee Training",
+          "description": "Provide regular training to employees on the importance of maintaining customer data and payment information confidentiality",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Audit and Compliance",
+          "description": "Regularly audit and assess compliance with the NDA to prevent any potential data breaches or information leaks",
+          "priority": "high"
+        }
+      ]
+    }
+  },
+  {
+    "record": 16,
+    "input": "Agreement with strict IP ownership clauses favoring vendor",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:47.067701",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review and Negotiate",
+          "description": "Carefully review the agreement's IP ownership clauses and negotiate with the vendor to ensure a more balanced approach that protects both parties' interests",
+          "priority": "high"
+        },
+        {
+          "action_type": "Seek Legal Counsel",
+          "description": "Consult with a legal expert to fully understand the implications of the agreement's IP ownership clauses and to identify potential risks and liabilities",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Develop Alternative Solutions",
+          "description": "Explore alternative solutions or vendors that offer more favorable IP ownership terms, in case the current agreement cannot be negotiated to a satisfactory level",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 17,
+    "input": "NDA with force majeure clause excluding natural disasters",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:47.802484",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Carefully review the force majeure clause to understand the specific exclusions and inclusions, particularly the exclusion of natural disasters",
+          "priority": "high"
+        },
+        {
+          "action_type": "Negotiate",
+          "description": "Negotiate with the vendor to consider including natural disasters in the force majeure clause or to provide alternative remedies in case of such events",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Assess",
+          "description": "Assess the potential risks and liabilities associated with the exclusion of natural disasters from the force majeure clause and develop a plan to mitigate them",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 18,
+    "input": "Vendor agreement with unlimited indemnification obligations",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:48.226667",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Renegotiate",
+          "description": "Renegotiate the vendor agreement to limit indemnification obligations",
+          "priority": "high"
+        },
+        {
+          "action_type": "Review",
+          "description": "Conduct a thorough review of the vendor agreement to understand the scope of indemnification obligations",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Mitigate",
+          "description": "Implement risk mitigation strategies to minimize potential losses due to unlimited indemnification obligations",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 19,
+    "input": "NDA covering both digital and physical confidential materials",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:48.803165",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Carefully review the NDA to understand the scope and terms of the agreement",
+          "priority": "high"
+        },
+        {
+          "action_type": "Implement",
+          "description": "Implement procedures to handle and protect both digital and physical confidential materials",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Monitor",
+          "description": "Regularly monitor and audit compliance with the NDA to prevent breaches and ensure adherence to the agreement",
+          "priority": "high"
+        }
+      ]
+    }
+  },
+  {
+    "record": 20,
+    "input": "Agreement restricting reverse engineering of software products",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:49.442250",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Carefully review the NDA to understand restrictions on reverse engineering of software products",
+          "priority": "high"
+        },
+        {
+          "action_type": "Compliance",
+          "description": "Ensure all development teams comply with the NDA terms to avoid any potential legal issues",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Documentation",
+          "description": "Maintain detailed documentation of all interactions with the vendor and their software products",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 21,
+    "input": "NDA with automatic breach notification within 24 hours",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:50.080508",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Review the NDA terms to understand the obligations and potential liabilities",
+          "priority": "high"
+        },
+        {
+          "action_type": "Implement",
+          "description": "Implement a system to track and monitor sensitive information sharing to ensure compliance with the NDA",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Train",
+          "description": "Train personnel on the procedures for handling confidential information and the notification process in case of a breach",
+          "priority": "high"
+        }
+      ]
+    }
+  },
+  {
+    "record": 22,
+    "input": "Vendor NDA with third party disclosure restrictions",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:50.653314",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Carefully review the vendor NDA to understand third party disclosure restrictions",
+          "priority": "high"
+        },
+        {
+          "action_type": "Compliance",
+          "description": "Ensure compliance with the vendor NDA by implementing necessary disclosure controls",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Monitoring",
+          "description": "Regularly monitor and audit third party disclosures to prevent unauthorized breaches of the vendor NDA",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 23,
+    "input": "Agreement protecting marketing strategies for 2 years",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:51.209962",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Analyze marketing strategies to ensure compliance with the 2-year protection agreement",
+          "priority": "high"
+        },
+        {
+          "action_type": "Restrict Access",
+          "description": "Limit access to marketing strategies to authorized personnel only",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Monitor Leaks",
+          "description": "Regularly monitor for potential leaks or breaches of protected marketing strategies",
+          "priority": "high"
+        }
+      ]
+    }
+  },
+  {
+    "record": 24,
+    "input": "NDA with dispute resolution through arbitration only",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:51.685041",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "review",
+          "description": "Carefully review the NDA terms to understand the implications of arbitration-only dispute resolution",
+          "priority": "high"
+        },
+        {
+          "action_type": "negotiate",
+          "description": "Consider negotiating the NDA terms to include alternative dispute resolution methods, such as mediation or litigation",
+          "priority": "medium"
+        },
+        {
+          "action_type": "consult",
+          "description": "Consult with a legal expert to ensure that the arbitration-only clause does not put the company at a significant disadvantage",
+          "priority": "high"
+        }
+      ]
+    }
+  },
+  {
+    "record": 25,
+    "input": "Vendor agreement with strict audit rights every quarter",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:52.512855",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review and Update Audit Process",
+          "description": "Ensure that internal audit procedures are aligned with the vendor's strict audit rights to avoid any non-compliance issues",
+          "priority": "high"
+        },
+        {
+          "action_type": "Designate an Audit Coordinator",
+          "description": "Appoint a specific person to oversee and coordinate the quarterly audits, ensuring timely preparation and response to vendor audits",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Conduct Internal Audit Readiness Checks",
+          "description": "Perform regular internal checks to identify and address potential vulnerabilities or non-compliance issues before the vendor's quarterly audits",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 26,
+    "input": "NDA covering employee information and HR data",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:53.028481",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review and Update",
+          "description": "Review and update the existing NDA to ensure it adequately covers employee information and HR data",
+          "priority": "high"
+        },
+        {
+          "action_type": "Employee Training",
+          "description": "Provide training to employees on the importance of maintaining confidentiality and handling sensitive HR data",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Incident Response Plan",
+          "description": "Develop an incident response plan in case of a breach or unauthorized disclosure of employee information and HR data",
+          "priority": "high"
+        }
+      ]
+    }
+  },
+  {
+    "record": 27,
+    "input": "Agreement with survival clause lasting 10 years post expiry",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:53.569245",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Regularly review the agreement to ensure compliance with the survival clause",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Negotiate",
+          "description": "Consider negotiating a shorter survival period or specific terms to minimize potential risks",
+          "priority": "high"
+        },
+        {
+          "action_type": "Monitor",
+          "description": "Closely monitor all activities and communications related to the vendor to prevent unintended disclosures during the 10-year survival period",
+          "priority": "high"
+        }
+      ]
+    }
+  },
+  {
+    "record": 28,
+    "input": "NDA protecting financial projections and business plans",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:54.107700",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Carefully review the NDA to understand the specific financial projections and business plans that are being protected",
+          "priority": "high"
+        },
+        {
+          "action_type": "Restrict Access",
+          "description": "Restrict access to the protected information to only those who have a legitimate need to know, such as key employees or partners",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Implement Security Measures",
+          "description": "Implement security measures such as encryption and secure storage to protect the confidentiality of the financial projections and business plans",
+          "priority": "high"
+        }
+      ]
+    }
+  },
+  {
+    "record": 29,
+    "input": "Vendor NDA with cross border data transfer restrictions",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:54.668931",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Review the vendor NDA to understand cross border data transfer restrictions",
+          "priority": "high"
+        },
+        {
+          "action_type": "Compliance Check",
+          "description": "Conduct compliance check to ensure adherence to cross border data transfer regulations",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Renegotiation",
+          "description": "Renegotiate the vendor NDA to include provisions for secure cross border data transfer",
+          "priority": "low"
+        }
+      ]
+    }
+  },
+  {
+    "record": 30,
+    "input": "Agreement with mutual non-solicitation of employees clause",
+    "status": "\u2705 OK",
+    "output": {
+      "generated_at": "2026-05-01T15:25:55.260948",
+      "is_fallback": false,
+      "recommendations": [
+        {
+          "action_type": "Review",
+          "description": "Carefully review the mutual non-solicitation of employees clause to understand its implications and potential restrictions on hiring practices",
+          "priority": "high"
+        },
+        {
+          "action_type": "Negotiation",
+          "description": "Consider negotiating the terms of the non-solicitation clause to ensure it is reasonable and does not overly restrict business operations",
+          "priority": "medium"
+        },
+        {
+          "action_type": "Compliance",
+          "description": "Develop a plan to ensure compliance with the non-solicitation clause, including training for employees and managers on its requirements and restrictions",
+          "priority": "low"
+        }
+      ]
+    }
+  }
+]
