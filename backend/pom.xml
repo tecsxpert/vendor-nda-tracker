@@ -12,11 +12,11 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.vendor</groupId>
-    <artifactId>vendor-nda-backend</artifactId>
+    <groupId>com.internship</groupId>
+    <artifactId>cross-border-backend</artifactId>
     <version>1.0.0</version>
-    <name>Vendor NDA Tracker Backend</name>
-    <description>Spring Boot Java backend for the Vendor NDA Tracker application</description>
+    <name>Cross-Border Data Transfer Manager Backend</name>
+    <description>Spring Boot Java backend for the Cross-Border Data Transfer Manager</description>
 
     <properties>
         <java.version>17</java.version>
@@ -80,6 +80,7 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                    <mainClass>com.internship.tool.CrossBorderApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
